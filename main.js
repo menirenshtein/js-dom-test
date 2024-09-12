@@ -95,6 +95,7 @@ function editSoldier(index) {
 
 
 function sortSoldiers() {
+    // debugger
     isAscending = !isAscending;
     soldiers.sort((a, b) => {
         const nameA = a.fullName.toUpperCase();

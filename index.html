@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main id="main-container">
+        <!-- <div id="home-container" class="main-displays"> -->
+
+            <h1> BATTALION FORCE MANAGEMENT</h1>
+            <hr id="spread-line" class="pageStyle">
+            <form id="new-soldier-form">
+                <input type="text" placeholder="Full Name" id="full-name-input" required>
+                <input type="text" placeholder="Rank" id="rank-input" required>
+                <input type="tel" placeholder="Position" id="position-input" required>
+                <input type="text" placeholder="Platoon" id="platoon-input" required>
+                <input type="number" placeholder="Mission Time (seconds)" id="mission-time-input" required>
+                <select id="selection-input">
+                    <option value="Active"> Active</option>
+                    <option value="Reserve">Reserve</option>
+                    <option value="Retired">Retired</option>
+                </select>
+                <button type="submit" id="add-soldier-btn" class="green-btn" > Add Personnel</button>
+            </form>
+            <h1 > SOMETHING</h1>
+            <hr id="spread-line" class="pageStyle">
+            <table id="soldier-table">
+                <thead>
+                    <tr>
+                        <th id="full-name-table"> <button type="button" id="sort-button" class="table-btn" > Full Name ↓</button></th>
+                        <th id="Rank-table" >RANK</th>
+                        <th id="Position-table" >POSITION</th>
+                        <th id="Platoon-table" >PLATOON</th>
+                        <th id="Status-table" >STATUS</th>
+                        <th id="Actions-table" >ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    
+                </tbody>
+            </table>
+        <!-- </div> -->
+    <!-- <div id="edit-soldier-container" style="display: none;" class="main-displays"> -->
+        <form id="edit-soldier-form"  style="display: none;" >
+                
+            <h1>EDIT PERSONNEL</h1>
+            <hr id="spread-line" class="pageStyle">
+            <input type="text" placeholder="Full Name" id="full-name-edit" required>
+            <input type="text" placeholder="Rank" id="rank-edit" required>
+            <input type="tel" placeholder="Position" id="position-edit" required>
+            <input type="text" placeholder="Platoon" id="platoon-edit" required>
+            <select id="selection-status-edit">
+                <option value="Active"> Active</option>
+                <option value="Reserve">Reserve</option>
+                <option value="Retired">Retired</option>
+            </select>
+            <input type="number" placeholder="Mission Time (seconds)" id="mission-time-edit" required>
+            <button id="save-soldier-change-btn" class="green-btn"> save changes</button>
+            <button id="cancel-change-btn"> Cancel </button>
+        </form>
+    <!-- </div> -->
+        </main>
+    <script src="main.js"></script>
+</body>
+</html>
